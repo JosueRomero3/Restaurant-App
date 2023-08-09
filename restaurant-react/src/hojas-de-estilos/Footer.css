@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    max-width: 1375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7em;
+}
+
+.linkedin{
+    width: 3em;
+    height: 3em;
+}
+
+.github{
+    width: 3em;
+    height: 3em;
+}

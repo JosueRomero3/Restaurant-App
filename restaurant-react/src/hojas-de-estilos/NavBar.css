@@ -1,0 +1,137 @@
+header{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedor-header{
+    width: 90%;
+    max-width: 1375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.cabecera-button{
+    display: none;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-ul{
+    align-items: center;
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.cabecera-svg{
+    width: 2em;
+    height: 2em;
+    display: none;
+}
+.cabecera-svg2{
+    width: 2.7em;
+    height: 2.7em;
+    color: white;
+    display: none; 
+}
+
+.active{
+    font-size: 1.04em;
+    color: white;
+}
+
+.desactive{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1300px){
+    .contenedor-ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 22em;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-header{
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .logo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .contenedor-ul.isActive{
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .contenedor-ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        display: none;
+    }
+
+    .contenedor-ul li{
+        margin: 0.7em;
+    }
+
+    .cabecera-button{
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecera-svg{
+        color: white;
+        width: 3em;
+        height: 3em;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .cabecera-svg.isActive{
+        display: none;
+    }
+
+    .cabecera-svg2.isActive{
+        color: white;
+        width: 2.2em;
+        height: 2.2em;
+        display: flex;
+        cursor: pointer;
+        margin-right: 0.5em;
+    }
+}
