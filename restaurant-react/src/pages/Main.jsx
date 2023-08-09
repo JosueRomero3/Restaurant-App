@@ -8,6 +8,9 @@ import Contacto from './Contacto';
 import Reservaciones from './Reservaciones'
 import PageNotFound from './PageNotFound';
 import Footer from '../componentes/Footer';
+import MenuComponent from '../componentes/MenuComponent';
+import Hamburguesas from '../componentes/Hamburguesas';
+import Bebidas from '../componentes/Bebidas';
 
 export default function Main() {
   return (
@@ -19,7 +22,11 @@ export default function Main() {
         <NavBar/>
             <Routes>
                 <Route path='/' element={<Nosotros/>}/>
-                <Route path='/Menu' element={<Menu/>}/>
+                <Route path='/Menu' element={<Menu/>}>
+                  <Route path='/Menu/Hamburguesas' element={<Hamburguesas/>}/>
+                  <Route path='/Menu/Bebidas' element={<Bebidas/>}/>
+                  
+                </Route>
                 <Route path='/Reservaciones' element={<Reservaciones/>}/>
                 <Route path='/Contacto' element={<Contacto/>}/>
                 <Route path='/*' element={<PageNotFound/>}/>

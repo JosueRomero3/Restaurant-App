@@ -1,0 +1,23 @@
+.caja{
+    width: 15em;
+    padding: 0.5em;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: none;
+    box-shadow: 0px 1px 12px 1px grey;
+    border-radius: 0.5em;
+}
+
+.imagen{
+    background-color: blue;
+    height: 10em;
+    width: 100%;
+}
+
+.descripcion{
+    margin: 1px;
+}

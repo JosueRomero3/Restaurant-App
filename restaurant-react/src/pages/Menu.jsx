@@ -1,10 +1,41 @@
 import React from 'react'
 import '../hojas-de-estilos/Menu.css'
+import { NavLink, Link, Outlet } from 'react-router-dom'
 
 export default function Menu() {
   return (
     <main className='Contenedor-principal'>
-      <h1 className='menu'>Menu</h1>
+      
+      <div className='contenedor-menu'>
+      
+        <section className='productos-1'>
+          <h3 className='productos1'>
+            <Link to='/menu'>Productos</Link> 
+          </h3>
+          <div className='productos-lista'>
+              <ul>
+                  <li className='producto'>
+                    <Link to={'/Menu/Hamburguesas'}>Hamburguesas</Link>  
+                  </li>
+                  <li className='producto'>
+                  <Link to={'/Menu/Bebidas'}>Bebidas</Link>
+                  </li>
+                  <li className='producto'>Postres</li>
+              </ul>
+          </div>
+        </section>
+
+        <section className='menu'>
+              <h1>Nuestros Productos</h1>
+
+              <div className='lista-menu'>
+              <Outlet/>
+              </div>
+        </section>
+
+
+      </div>
+      
     </main>
   )
 }
