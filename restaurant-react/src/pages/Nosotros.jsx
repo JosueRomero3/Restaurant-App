@@ -7,7 +7,7 @@ export default function Nosotros() {
   return (
 
     <main className='Contenedor-principal'>
-   
+    
         <section className='contenedor-video'>
           <video src={video} autoPlay muted loop className='video'></video>
           <div className='Nosotros-Text'>
@@ -32,6 +32,7 @@ export default function Nosotros() {
                 <h1>Lorem ipsum</h1> 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt id culpa, illo placeat fuga possimus earum ea itaque, accusantium nam perspiciatis magnam reiciendis ratione distinctio? Ipsum doloremque repellendus voluptate voluptates!</p>
               </div>
+              <hr />
                 <div className='rating'>
                   <div className='nacimiento'>
                     <p>Nacimiento</p>
@@ -51,6 +52,10 @@ export default function Nosotros() {
                 </div>
                 
             </article>
+        </section>
+        <section className='contenedor-imagen'>
+          <div className='contenedor-burger'>
+          </div>
         </section>
     </main>
   )

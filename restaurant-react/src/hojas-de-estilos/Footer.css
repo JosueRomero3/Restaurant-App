@@ -23,6 +23,14 @@
     width: 7em;
 }
 
+.R{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30em;
+    align-items: flex-end;
+}
+
 .linkedin{
     width: 3em;
     height: 3em;
