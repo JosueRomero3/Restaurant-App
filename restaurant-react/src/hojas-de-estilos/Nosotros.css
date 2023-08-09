@@ -1,13 +1,15 @@
 .Contenedor-principal{
-    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-
+    align-items: center;
+    flex-direction: column;
 }
+
+
 
 .contenedor-video{
     width: 100%;
-    height: 30em;
+    margin-top: 0;
     padding-bottom: 8em;
     max-width: 1375px;
     display: flex;
@@ -27,8 +29,7 @@
 }
 
 .Nosotros-Text{
-    width: 70%;
-    height: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,3 +44,89 @@ h1{
 p{
     width: 100%;
 }
+
+/* .contenedor-imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background-color: rgb(20, 20, 20);
+} */
+
+.contenedor-blog{
+    width: 100%;
+    max-width: 1375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    border: 4px black solid;
+}
+
+.blog{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.imagen{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+.blog-2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto{
+    text-align: center;
+    width: 90%;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+}
+
+@media screen and (max-width:1300px){
+    .video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+    }
+    
+    h1{
+        font-size: 3em;
+    }
+    
+    p{
+        width: 100%;
+    }
+    
+    .blog{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+

@@ -5,11 +5,9 @@ import Main from './pages/Main';
 function App() {
   return (
     <div className="App">
-      <div className='contenedor'>
+      <div className='container'>
         <Main/>
       </div>
-      
-      
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Main() {
     <div className='contenedor-principal'>
         
         <div className='contenedor'>
-        
+            
         <BrowserRouter>
         <NavBar/>
             <Routes>
@@ -24,8 +24,8 @@ export default function Main() {
                 <Route path='/Contacto' element={<Contacto/>}/>
                 <Route path='/*' element={<PageNotFound/>}/>
             </Routes>
-            <Footer/>
-      </BrowserRouter>
+        </BrowserRouter>
+        <Footer/>
         </div>
         
     </div>
