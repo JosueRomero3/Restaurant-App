@@ -12,7 +12,7 @@
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 33%;
+    width: 40%;
     border: 1px solid black;
     border-radius: 10px;
     padding: 1em;
@@ -32,14 +32,13 @@
 .datos{
     margin: 2em;
     width: 60%;
-    background-color: aqua;
+    display: flex;
 }
 
 .tabla{
-    background-color: blanchedalmond;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 0.5em;
     padding: 0 1em;
@@ -49,15 +48,33 @@
     width: 100%;
 }
 
+.tabla tbody{
+    width: 100%;
+}
+
+.tabla th{
+    width: 18%;
+}
+
+.tabla td{
+    width: 18%;
+}
+
 .tabla tr{
     width: 100%;
-    background-color: azure;
     display: flex;
     justify-content: space-between;
 }
 
 
-@media screen and (max-width:700px){
+
+@media screen and (max-width:1038px){
+    .tabla th{
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width:900px){
     .contenedor-formulario{
         display: flex;
         justify-content: center;
@@ -65,15 +82,24 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        background-color:brown;
-        
+    }
+
+    .contenedor-formulario h1{
+        font-size: 2em;
     }
 
     .form-reserva{
-        width: 80%;
+        width: 50%;
     }
 
     .datos{
-        width: 80%;
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .datos{
+        width: 95%;
     }
 }

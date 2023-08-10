@@ -1,5 +1,5 @@
-import React from 'react'
-import { collection, addDoc } from 'firebase/firestore'
+import React, { useEffect } from 'react'
+import { collection, addDoc, onSnapshot } from 'firebase/firestore'
 import '../hojas-de-estilos/reservas.css'
 import Form from 'react-bootstrap/Form'
 // import img from '../../img/img.jpg'
@@ -28,6 +28,8 @@ export default function Reservas() {
 
     addDoc(collection(db, 'reserva'), formData)
     alert('Se guardó con exito')
+
+    getReservas()
   }
 
   const onChange = (e)=>{
@@ -35,6 +37,21 @@ export default function Reservas() {
       ...formData, [e.target.name] : e.target.value
     })
   }
+
+  const getReservas = async() =>{
+    onSnapshot(collection(db, 'reserva'), (snapShot)=>{
+      const lista = [];
+      snapShot.forEach(doc =>lista.push({...doc.data(), id: doc.id}))
+
+      setReservas(lista)
+    })
+
+    console.log(reservas);
+  }
+
+  useEffect(() =>{
+    getReservas()
+  }, [])
 
   return (
       <>
@@ -77,6 +94,21 @@ export default function Reservas() {
                   <th>Comensales</th>
                 </tr>
               </thead>
+              <tbody>
+                {
+                  reservas.map(reserva => {
+                    return(
+                      <tr>
+                        <td>{reserva.nombre}</td>
+                        <td>{reserva.telefono}</td>
+                        <td>{reserva.fecha}</td>
+                        <td>{reserva.hora}</td>
+                        <td>{reserva.comensales}</td>
+                      </tr>
+                    )
+                  })
+                }
+              </tbody>
             </Table>
         </div>
       </div>
