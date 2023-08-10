@@ -8,9 +8,11 @@ import Contacto from './Contacto';
 import Reservaciones from './Reservaciones'
 import PageNotFound from './PageNotFound';
 import Footer from '../componentes/Footer';
-import MenuComponent from '../componentes/MenuComponent';
+import MenuComponent from '../componentes/MenuBurger';
 import Hamburguesas from '../componentes/Hamburguesas';
 import Bebidas from '../componentes/Bebidas';
+import ChickenBurger from '../componentes/ChickenBurger';
+import Postres from '../componentes/Postres';
 
 export default function Main() {
   return (
@@ -24,7 +26,9 @@ export default function Main() {
                 <Route path='/' element={<Nosotros/>}/>
                 <Route path='/Menu' element={<Menu/>}>
                   <Route path='/Menu/Hamburguesas' element={<Hamburguesas/>}/>
+                  <Route path='/Menu/Chicken-Burger' element={<ChickenBurger/>}/>
                   <Route path='/Menu/Bebidas' element={<Bebidas/>}/>
+                  <Route path='/Menu/Postres' element={<Postres/>}/>
                   
                 </Route>
                 <Route path='/Reservaciones' element={<Reservaciones/>}/>

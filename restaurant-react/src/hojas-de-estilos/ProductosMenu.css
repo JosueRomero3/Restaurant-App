@@ -1,5 +1,11 @@
-.Hamburguesas{
-    background-color: aqua;
+.Product{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.componentes{
+    margin: 1em 0;
     height: 100%;
     display: flex;
     flex-wrap: wrap;

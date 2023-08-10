@@ -1,7 +1,7 @@
 .caja{
-    width: 15em;
+    width: 18em;
+    height: 25em;
     padding: 0.5em;
-    background-color: azure;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,12 +12,35 @@
     border-radius: 0.5em;
 }
 
-.imagen{
-    background-color: blue;
-    height: 10em;
+.desciption{
+    height: 50%;
     width: 100%;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%;
+}
+
+.imagen img{
+    height: 100%;
+}
+
+.nombre{
+    margin-bottom: 4px;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .descripcion{
     margin: 1px;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+.precio{
+    font-size: 1.3em;
 }
