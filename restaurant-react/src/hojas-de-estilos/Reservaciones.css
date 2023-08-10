@@ -1,0 +1,9 @@
+.contenedor-reservas{
+    width: 100%;
+    height: 100%;
+    max-width: 1375px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,11 +4,10 @@ import '../hojas-de-estilos/Main.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nosotros from './Nosotros';
 import Menu from './Menu';
-import Contacto from './Contacto';
 import Reservaciones from './Reservaciones'
 import PageNotFound from './PageNotFound';
 import Footer from '../componentes/Footer';
-import MenuComponent from '../componentes/MenuBurger';
+
 import Hamburguesas from '../componentes/Hamburguesas';
 import Bebidas from '../componentes/Bebidas';
 import ChickenBurger from '../componentes/ChickenBurger';
@@ -32,7 +31,6 @@ export default function Main() {
                   
                 </Route>
                 <Route path='/Reservaciones' element={<Reservaciones/>}/>
-                <Route path='/Contacto' element={<Contacto/>}/>
                 <Route path='/*' element={<PageNotFound/>}/>
             </Routes>
         </BrowserRouter>

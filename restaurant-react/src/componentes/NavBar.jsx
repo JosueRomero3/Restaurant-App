@@ -37,9 +37,6 @@ export default function NavBar() {
                 <li>
                     <NavLink className={({isActive}) => isActive ? 'active' : 'desactive'} to='/Reservaciones'>Reservaciones</NavLink>
                 </li>
-                <li>
-                <NavLink className={({isActive}) => isActive ? 'active' : 'desactive'} to='/Contacto'>Contacto</NavLink>
-                </li>
             </ul>
         </div>
     </header>
