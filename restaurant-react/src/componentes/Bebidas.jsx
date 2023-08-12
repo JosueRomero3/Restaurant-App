@@ -31,7 +31,7 @@ export default function ChickenBurger() {
         imagen= {'Fanta'}
         nombre={'Fanta'}
         descripcion= {'Diversión contra la sed. Prepárate para calmar la sed con esta gaseosa helada.'}
-        precio ={'$3'}
+        precio ={'$2'}
       />
       <MenuBebidas
         imagen= {'TeHatsu'}

@@ -11,25 +11,25 @@ export default function Hamburguesas() {
         imagen= {'Bacon'}
         nombre={'Burger Bacon'}
         descripcion= {'Hamburguesa con dos carnes de res de 50gr, tocineta, queso cheddar, cebolla, salsa de tomate y mostaza'}
-        precio ={'$10'}
+        precio ={'$6'}
       />
       <MenuBurger
         imagen= {'Triple-Queso'}
         nombre={'Triple Hamburguesa con Queso'}
         descripcion= {'Hamburguesa con tres carne de 50gr, dos queso cheddar, cebolla, pepinillos, salsa de tomate y mostaza.'}
-        precio ={'$12'}
+        precio ={'$8'}
       />
       <MenuBurger
         imagen= {'Doble-Con-Queso'}
         nombre={'Doble Hamburguesa con Queso'}
         descripcion= {'Hamburguesa con doble carne de 50gr, queso cheddar, cebolla, pepinillos, salsa de tomate y mostaza.'}
-        precio ={'$12'}
+        precio ={'$6'}
       />
       <MenuBurger
         imagen= {'Burger'}
         nombre={'Hamburguesa'}
         descripcion= {'Hamburguesa con carne de res, cebolla, pepinillos, salsa de tomate y mostaza.'}
-        precio ={'$12'}
+        precio ={'$5'}
       />
       <MenuBurger
         imagen= {'Cuarto-De-Libra'}

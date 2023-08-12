@@ -27,6 +27,7 @@
     object-fit: cover;
 }
 
+
 .Nosotros-Text{
     width: 100%;
     display: flex;
@@ -55,7 +56,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    padding: 5em;
+    padding: 12em;
     max-width: 1375px;
     height: 100%;
     background-color: rgb(20, 20, 20);
@@ -74,9 +75,21 @@
 .blog{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 252, 245);
     padding: 2em 0;
+}
+
+.conocenos{
+    font-size: 4em;
+    color: rgb(161, 135, 64);
+}
+
+.texto-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen{
@@ -86,14 +99,14 @@
 }
 
 .imagen img{
-    width: 100%;
+    width: 70%;
 }
 
 .blog-2{
-    background-color: white;
+    /* background-color: white; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 60%;
 }
@@ -105,11 +118,17 @@
 hr{
     margin-top: 1em;
     width: 40em;
+    background-color:  rgb(255, 187, 0)
 }
 
 .texto h1{
     font-size: 4em;
-    color: black;
+    color: rgb(161, 135, 64);
+    
+}
+
+.stars{
+    color: rgb(161, 135, 64);
 }
 
 .texto{
@@ -224,6 +243,11 @@ hr{
        align-items: center;
     }
     
+    .texto-imagen{
+        display: flex;
+        flex-direction: column;
+    }
+
     .blog .imagen{
         width: 50%;
         height: 50%;

@@ -71,7 +71,7 @@ export default function Reservas() {
             <Form.Label>Comensales</Form.Label>
             <Form.Control type="string" value={formData.comensales} onChange={onChange} name='comensales' placeholder='Número de personas'/>
             <Form.Label>Email:</Form.Label>
-            <Form.Control type="email" value={formData.email} onChange={onChange} required name='email' />
+            <Form.Control type="email" value={formData.email} onChange={onChange} required name='email' placeholder='Escribe tu correo' />
             <Form.Text>
               Tu información es privada y no será compartida o reutilizada.
             </Form.Text>

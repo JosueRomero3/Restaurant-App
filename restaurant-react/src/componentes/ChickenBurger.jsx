@@ -17,19 +17,19 @@ export default function ChickenBurger() {
       />
       <MenuChickenBurger
         imagen= {'Crispy'}
-        nombre={'Burger Chicken'}
+        nombre={'Chicken Crispy'}
         descripcion= {'Hamburguesa con pollo apanado, mayonesa y pepinillos.'}
         precio ={'$15'}
       />
       <MenuChickenBurger
         imagen= {'Spicy'}
-        nombre={'Burger Chicken'}
+        nombre={'Chicken Spicy'}
         descripcion= {'Hamburguesa con Pollo, Lechuga y Mayonesa baja en grasa'}
         precio ={'$10'}
       />
       <MenuChickenBurger
         imagen= {'Premium'}
-        nombre={'Burger Chicken'}
+        nombre={'Chicken Premium'}
         descripcion= {'Hamburguesa con Pollo, Lechuga y Mayonesa baja en grasa'}
         precio ={'$12'}
       /></div>

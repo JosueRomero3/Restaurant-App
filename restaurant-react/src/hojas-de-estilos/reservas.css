@@ -13,14 +13,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 40%;
-    border: 1px solid black;
     border-radius: 10px;
     padding: 1em;
     margin: 2em;
+    box-shadow: 1px 0px 10px -3px gray;
+    background-color: rgba(219, 171, 38, 0.849);
 }
 
 .contenedor Form input {
     width: 100%;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    padding: 1px 5px;
 }
 
 .contenedor-formulario button{
@@ -46,6 +50,7 @@
 
 .tabla thead{
     width: 100%;
+    color: rgba(219, 171, 38, 0.849);
 }
 
 .tabla tbody{
@@ -66,7 +71,15 @@
     justify-content: space-between;
 }
 
+form button{
+    border-radius: 0.5em;
+    padding: 0.3em;
+    border: none;
+}
 
+form button:hover{
+    background-color: rgba(194, 172, 113, 0.781);
+}
 
 @media screen and (max-width:1038px){
     .tabla th{
@@ -89,7 +102,7 @@
     }
 
     .form-reserva{
-        width: 50%;
+        width: 60%;
     }
 
     .datos{
