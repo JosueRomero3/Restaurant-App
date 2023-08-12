@@ -93,7 +93,7 @@ header{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .logo{
@@ -104,7 +104,7 @@ header{
     }
 
     .logo-restaurant{
-        width: 8em;
+        width: 6em;
     }
 
     .contenedor-ul.isActive{
@@ -137,8 +137,8 @@ header{
     }
     .cabecera-svg{
         color: white;
-        width: 6em;
-        height: 6em;
+        width: 4em;
+        height: 4em;
         display: flex;
         cursor: pointer;
     }
@@ -149,8 +149,8 @@ header{
 
     .cabecera-svg2.isActive{
         color: white;
-        width: 4.8em;
-        height: 4.8em;
+        width: 3em;
+        height: 3em;
         display: flex;
         cursor: pointer;
         margin-right: 0.5em;

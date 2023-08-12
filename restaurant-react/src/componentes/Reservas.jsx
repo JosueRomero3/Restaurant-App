@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { collection, addDoc, onSnapshot } from 'firebase/firestore'
 import '../hojas-de-estilos/reservas.css'
 import Form from 'react-bootstrap/Form'
-// import img from '../../img/img.jpg'
 import db from '../config/dbFirebase'
 import { useState } from 'react'
 import { Table } from 'react-bootstrap'
@@ -26,10 +25,17 @@ export default function Reservas() {
     event.preventDefault()
     console.log(formData);
 
-    addDoc(collection(db, 'reserva'), formData)
+    if(formData.nombre === '' || formData.telefono === '' || formData.fecha === '' || formData.hora === '' || formData.comensales === '' || formData.email === ''){
+        alert('Todos los campos son necesarios')
+
+    } else{
+      addDoc(collection(db, 'reserva'), formData)
     alert('Se guardó con exito')
 
     getReservas()
+    }
+
+    
   }
 
   const onChange = (e)=>{
@@ -58,7 +64,6 @@ export default function Reservas() {
       <div className='contenedor-formulario'>
         <Form onSubmit={onSave} className='form-reserva'>
           <Form.Group className='form-group'>
-            {/* <img src={img} alt="" /> */}
             <h1>Datos de la Reserva</h1>
             <Form.Label>Nombre completo:</Form.Label>
             <Form.Control type="string" value={formData.nombre} onChange={onChange} name='nombre' placeholder='Escribe tu nombre y apellidos'/>

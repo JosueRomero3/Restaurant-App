@@ -12,10 +12,9 @@ export default function Nosotros() {
         <section className='contenedor-video'>
           <video src={video} autoPlay muted loop className='video'></video>
           <div className='Nosotros-Text'>
-            <h1>Nosotros</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reiciendis adipisci laboriosam odit asperiores ab ipsam dolor alias consequuntur enim molestias esse nihil, commodi amet itaque nemo totam pariatur ipsum!
-
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, porro, aperiam dolor quis soluta saepe nemo est harum vitae provident, explicabo nam illum debitis iste ab omnis deleniti perspiciatis repudiandae?
+            <h1>Sabores que Inspiran</h1>
+            <p>Somos amantes de las experiencias inigualables y de los momentos únicos, queremos que nuestros invitados siempre puedan deleitarse y disfrutar en cada una de sus visitas con sus amigos, familias, entre otros. En nuestro restaurante puedes recargar energías, premiar tus victorias y sobre todo crear recuerdos con quien decidas visitarnos.
+            Nuestro talento humano está, altamente comprometido y dispuesto a brindarte una experiencia inolvidable.
             </p>
           </div>
         </section>
@@ -23,7 +22,7 @@ export default function Nosotros() {
 
           <article className="blog">
 
-            <h1 className='conocenos'>Conócenos</h1>
+            <h1 className='conocenos'>¿Quiénes Somos?</h1>
 
             <div className='texto-imagen'>
             <div className='imagen'>
@@ -36,8 +35,8 @@ export default function Nosotros() {
                 <div className='blog-2'>
                   
                 <div className='texto'>
-                  <h1>Lorem ipsum</h1> 
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt id culpa, illo placeat fuga possimus earum ea itaque, accusantium nam perspiciatis magnam reiciendis ratione distinctio? Ipsum doloremque repellendus voluptate voluptates!</p>
+                  <h1>Somos The Cartel Burger</h1> 
+                  <p>Nacimos en 2021 en ciénaga Magdalena, iniciando operaciones con la inauguración de nuestro primer restaurante de comida casual. Adoptamos un estilo bastante original, y hoy por hoy nos inclinamos por tendencias vanguardistas y un estilo moderno, donde siempre podrás sentirte como en casa.</p>
                 </div>
                 <hr />
                   <div className='rating'>

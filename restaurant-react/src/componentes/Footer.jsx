@@ -18,7 +18,9 @@ export default function Footer() {
             </div>
             <div className='R'>
                 <p>
-                Hamburger&#174; 2023. Todos los derechos reservados.</p>
+                The Cartel Burger&#174; 2023. </p>
+                <p>Todos los derechos reservados.</p>
+                
                 <p>Aplicación ficticia con fines académicos.</p>
             </div>
         </div>
