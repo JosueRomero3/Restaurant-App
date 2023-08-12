@@ -101,17 +101,15 @@ form button:hover{
         font-size: 2em;
     }
 
+    .contenedor Form input {
+        margin: 0.7em 0;
+    }
+
     .form-reserva{
-        width: 60%;
+        width: 80%;
+        height: 80%;
     }
 
-    .datos{
-        width: 95%;
-    }
-}
-
-
-@media screen and (max-width:500px){
     .datos{
         width: 95%;
     }

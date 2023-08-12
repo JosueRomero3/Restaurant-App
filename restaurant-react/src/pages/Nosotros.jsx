@@ -55,6 +55,29 @@ export default function Nosotros() {
                       <p>Ciénaga, Magdalena</p>
                     </div>
                   </div>
+
+                  <hr />
+                  
+                  <div className='contacto'>
+
+                    <div className='dirección'>
+                      <h4>Visitanos</h4>
+                      <p>Calle 154 #75c-314</p>
+                    </div>
+                    <div className='telefono'>
+
+                    <h4>Telefono</h4>
+                    <p>+57 - 012 345 6789</p>
+                    </div>
+                  
+                  </div>   
+                  <div className='horarios'>
+                    <h4>Horarios de atención</h4> 
+                    <p>Lunes a viernes: 5:00 pm -10:00 pm</p> 
+                    <p>Sábados y domingos: 5:00 pm - 12:00 pm
+                    </p>
+                    <p>Festivos: 5:00 pm - 9:00 pm</p>
+                  </div>              
                   </div>
             </div>
             
